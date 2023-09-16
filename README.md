@@ -1,2 +1,2 @@
 # Quiz application
-## HTML ## CSS ## JS
+## HTML CSS JS
