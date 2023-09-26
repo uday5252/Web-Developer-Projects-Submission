@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+} 
+#container
+{
+    width: 500px;
+    height:400px;
+    background-color: rgb(235, 196, 196);
+    padding-left: 30px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 500px;
+    
+}
+html{
+    font-family: sans-serif;
+}
+h1{
+    margin-left: 600px;
+}
+#qtn{
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+#next{
+    margin-top: 20px;
+    padding: 3px 10px;
+    margin-left: 120px;
+    width: 40%;
+   font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+
