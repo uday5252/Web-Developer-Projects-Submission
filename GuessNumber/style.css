@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+     width: 40rem;
+     height: 27rem;
+     background-color: rgb(230, 237, 204);
+     margin: 0 auto;
+     transform: translateY(10%);
+     padding: 2rem;
+}
+
+#submits , #submit{
+     width: 20rem;
+     height: 10rem;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+}
+#rangeinfo{
+     text-align: center;
+     padding: 0.5rem;
+}
+input , button{
+     padding: 0.5rem;
+     margin-top: 0.5rem;
+}
+
+.result_container{
+    margin-top: -2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#ended{
+     width: 20rem;
+     padding: 1rem;
+     background-color: whitesmoke;
+     position: absolute;
+     top: 10%;
+     left: 25%;
+     display: none;
+}
