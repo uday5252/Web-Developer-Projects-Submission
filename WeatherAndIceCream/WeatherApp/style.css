@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(58, 124, 255, 0.5);
+}
+#img-back-icon{
+    width: 100%;
+    height: 99.4vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+#white-box{
+    width: 33%;
+    min-height:20rem;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    top:28%;
+    left:32%;
+    padding: 1.5rem;
+}
+.search-country{
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+}
+
+#input-value{
+    width:80%;
+    height:3vh;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding:1.5rem;
+    background-color: #7c7c7c2b;
+    color: white;
+}
+#search-icon{
+    width: 10%;
+    height: 6vh;
+    background-color: black;
+    border: 2px solid black;
+    fill:white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.text-container{
+    width: 100%;
+    color:white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#country-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+#temperature{
+  font-size:2rem;
+  font-weight: 700;
+}
+.image-icon-withtext{
+    width:100%;
+    padding-bottom: 0.5rem;
+}
+#type-of-weather{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#humidity{
+    font-size: 1rem;
+    font-weight: 200;
+}
+#speed{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+@media (max-width:992px){
+    #white-box{
+        width: 35%;
+
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:34%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:805px){
+    #white-box{
+        width: 45%;
+
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:34%;
+        padding: 1.5rem;
+    }
+}
+@media (max-width:628px){
+    #white-box{
+        width: 50%;
+  
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:34%;
+        padding: 1.5rem;
+    }
+}
+@media (max-width:377px){
+    #white-box{
+        width: 100%;
+  
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:0%;
+        padding: 1.5rem;
+    }
+}
+@media (max-width:362px){
+    #white-box{
+        width: 100%;
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:0%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:450px){
+    #white-box{
+        width: 100%;
+
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:0%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:822px){
+    #white-box{
+        width: 100%;
+       
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:0%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:914px){
+    #white-box{
+        width: 100%;
+    
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:0%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:282px){
+    #white-box{
+        width: 100%;
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: absolute;
+        top:28%;
+        left:0%;
+        padding: 1.5rem;
+    }
+}

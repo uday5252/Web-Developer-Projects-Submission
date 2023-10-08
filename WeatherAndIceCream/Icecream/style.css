@@ -1,0 +1,38 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+      width: 30rem;
+      height: 25rem;
+      background-color: whitesmoke;
+      border-radius: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.inside_box{
+     width: 30rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap:0.5rem;
+     padding: 1rem;
+}
+
+.result{
+    width:30rem;
+    display: flex;
+    justify-content: center;
+}

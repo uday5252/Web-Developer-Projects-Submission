@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form  id="submits">
+        <label>User defined range</label>
+        <input  type="number" placeholder="Enter Minimum"  id="minimum"/>
+        <input  type="number" placeholder="Enter Maximum"  id="maximum"/>
+        <button type="submit">Submit</button>   
+        </form> 
+        
+         <h4 id="rangeinfo"></h4>
+        <form  id="submit">
+            <label>User</label>
+            <input  type="number" placeholder="Guess Number" id="user"/>
+            <button type="submit">user</button>
+        </form>
+        <div class="result_container">
+            <div>Attempts:<span id="count">3</span></div>
+            <div>result:<span id="result"></span></div>
+        </div>
+        <div id="ended">
+            <h4>The Game is Ended </h4>
+            <button class="restart">ReStart</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
