@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="brand-logo">Ice Cream Parlor</div>
+            <div class="search">
+                <input id="input-box" type="number" placeholder="Enter Amount before Purchase in Dollers">
+                <button id="subit-btn" class="btn btn-primary">Submit</button>
+            </div>
+            <div id="cart">
+                <span id="cart-quantity">0</span>
+                <div id="cart-logo">
+                    <i class="fa-solid fa-cart-shopping"></i> <b>Cart</b>
+                </div>
+                <div id="cart-pop-up">
+                    <span id="cart-message">Your Cart is Empty.</span>
+                    <ul id="cart-list">
+                        <!-- <li class="cart-card">
+                            <div class="cart-details">
+                                <div class="cart-image"></div>
+                                <div class="cart-description">
+                                    <div class="cart-name">Vanilla Ice Cream</div>
+                                    <div class="description">Classic vanilla ice cream topped with rich choc vanilla ice cream topped with rich chocolate syrup and colorful sprinkles.</div>
+                                </div>
+                            </div>
+                            <div class="cart-cta">
+                                <div>
+                                    <span class="cart-price">2.5 </span>$
+                                    <input class="quantity" min="1" max="5" value="1" type="number">
+                                </div>
+                                <i class="fa-solid fa-trash" id="cart-card-remove"></i>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <div id="purchase-cta">
+                        <div id="amount">
+                            <span id="total">Total Amount: </span>
+                            <span id="total-amount">0 $</span>
+                        </div>
+                        <button id="purchase-btn" class="btn btn-primary" disabled>Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="body-container">
+            <ul id="ice-cream-list">
+                <!-- <li class="ice-cream-card">
+                    <div class="ice-cream-details">
+                        <div class="ice-cream-image"></div>
+                        <div class="description">
+                            <div class="ice-cream-name">Vanilla Ice Cream</div>
+                            <div class="ice-cream-description">Classic vanilla ice cream topped with rich choc vanilla ice cream topped with rich chocolate syrup and colorful sprinkles.</div>
+                            <div class="ice-cream-flavours">
+                                <span class="flavours btn">Vanilla</span>
+                                <span class="flavours btn">Chocolate</span>
+                                <span class="flavours btn">Sprinkles</span>
+                                <span class="flavours btn">Vanilla</span>
+                                <span class="flavours btn">Chocolate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cta">
+                        <span class="price">2.5 $</span>
+                        <button id="add-cart-btn" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

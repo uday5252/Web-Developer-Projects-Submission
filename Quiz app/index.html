@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 id="tittle">Welcom to Quiz contest</h1>
+    <div id="qna-container">
+        <div id="que-no-info">
+            <div id="info"><i class="fa-solid fa-circle-info"></i> Question No.<span class="current-que">-</span> of <span class="total-que">-</span></div>
+        </div>
+        <div id="que-container">
+            <h2 id="que">-</h2><br>
+            <span>Please choose one of the following answers:</span>
+        </div>
+        <div id="ans-container">
+            <!-- <div class="options"><input class="radio" type="radio"><span data-option>dog</span></div>
+            <div class="options"><input class="radio" type="radio"><span data-option>snake</span></div>
+            <div class="options"><input class="radio" type="radio"><span data-option>elephant</span></div>
+            <div class="options"><input class="radio" type="radio"><span data-option>parrot</span></div> -->
+        </div>
+        <div id="cta-btn">
+            <button id="next" class="btn active">Save & Next</button>
+            <button id="submit" disabled class="btn">Submit</button>
+        </div>
+
+    </div>
+    
+    <div id="result">
+        <h1 class="declare">-</h1>
+        <p>your progress and score.</p>
+        <div id="progress-container">
+            <div id="progress-score-container">
+                <h3><span class="progress-percentage">-</span>% Passed</h3>
+                <h3>Your score: <span class="correct-ans">2</span> / <span class="total-que">5</span></h3>
+            </div>
+            <div id="progress-bg">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="qna-details">
+                <h5>Total No. Of Question: <span class="total-que">-</span></h5>
+                <h5>Total No. Of Questions Correct: <span class="correct-ans">-</span></h5>
+            </div>
+        </div>
+        <div id="button">
+            <a href="http://127.0.0.1:5500/quiz%20app/index.html" class="btn active">Continue & Refresh</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
