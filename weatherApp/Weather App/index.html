@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App With JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+            <h1>Weather App</h1>
+            <!-- search box for searching city -->
+
+            <div class="search-box">
+                <input type="text" autofocus placeholder="Enter your location" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+
+<!-- //////////////////////Error in fetching city name//////////////// -->
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="/assets/not-found.png" alt="404 Error">
+        </div>
+
+     <!-- loading screen container  -->
+
+    <div class="loading">
+        <img src="./assets/loading.gif" width="170" height="170">
+        <p>Loading...</p>
+    </div>
+
+<!-- //////////////////////Error in fetching api//////////////// -->
+
+    <div class="error">
+        <h2> An error happened,please try again later</h2><br><br>
+        <img src="./assets/network error.jpg" alt="">
+    </div>
+
+ <!-- ////////////////////////main body to store data //////////////////// -->
+
+        <div class="weather-body">
+            <img src="/assets/clouds.png" alt="Weather Image" class="weather-img">
+             <div class="city"> CityName</div>
+            <div class="weather-box">
+                <p class="temperature">°C</p>
+                <p class="description"></p>
+            </div>
+
+            <div class="weather-details">
+                
+                <div class="humidity">
+                    <img src="./assets/humidity.png">
+                        <p>Humidity</p>
+                        <span id="humidity">%</span>
+                </div>
+
+                <div class="wind">
+                    <img src="./assets/wind.png">
+                        <p>Wind speed</p>
+                        <span id="wind-speed">km/h</span> 
+                </div>
+
+                <div class="cloud">
+                    <img src="./assets/cloud.png" >
+                    <p>Clouds</p>
+                    <span id="cloudiness">%</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
