@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"></video>
+        </div>
+        <div class="controls">
+            <div class="firstRow">
+                <!-- <div class="firstRowContainer"> -->
+                    <div class="firstRowLeft">
+                        <div class="progressContainer">
+                            <div class="progressBar"></div>
+                        </div>
+                    </div>
+                    <div class="firstRowRight">
+                        <div class="currentTime">0.00&nbsp;</div>/
+                        <div class="duration">&nbsp;2.50</div>
+                    </div>
+                <!-- </div> -->
+
+            </div>
+            <div class="secondRow">
+                <div class="icons">
+                    <div class="iconsLeft">
+                        <i class="fa-solid fa-backward" id="backward"></i>
+                        <i class="fa-solid fa-play" id="play"></i>
+                        <i class="fa-solid fa-forward" id="forward"></i>
+                        <div class="volume">
+                            <i class="fa-solid fa-volume-high" id="volume"></i>
+                            <div class="progressVolumeContainer">
+                                <div class="progressVolumeBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speedExpand">
+                        <select id="speed">
+                            <option value="0.5">0.5x</option>
+                            <option value="0.75">0.75x</option>
+                            <option selected value="1">1x</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="1.75">1.75x</option>
+                            <option value="2">2x</option>
+
+                        </select>
+                        <i class="fa-solid fa-expand" id="full"></i>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

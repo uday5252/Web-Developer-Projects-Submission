@@ -1,0 +1,24 @@
+#category-container {
+    width: 98%;
+    height: 100px;
+    margin: 18px;
+    margin-top: 88px;
+    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: white;
+    line-height: 1.5;
+}
+#category-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#category-list a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 5px;
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-color: #f1f2f4;
+}
+#container {
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+.arrow-cta {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.nav-cta-icons, #search-button, .best-mobiles-card, .best-selling-card, .top-deals-card, .arrow-cta, #brand, .cta {
+    cursor: pointer;
+}
+.cta {
+    padding: 8px;
+    line-height: 1.5;
+    text-align: center;
+    min-width: 100px;
+    max-width: 200px;
+    border-radius: 5px;
+}
+.cta:hover {
+    border: 2px solid #2A4024;
+}
+.cta:hover:active, #search-button:active, .btn:active {
+    box-shadow: 1px 1px 2px black,
+    -1px -1px 2px black;
+}
+.thumbnail {
+    width: 150px;
+    height: 140px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* border: 1px solid red; */
+}
+.thumbnail-tittle {
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.thumbnail-price {
+    text-align: center;
+    line-height: 1.5;
+}
+.thumbnail-cta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn {
+    padding: 5px 10px;
+    background-color: #2A4024;
+    color: white;
+    border-radius: 5px;
+    line-height: 1.5;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.thumbnail-card {
+    min-width: 220px;
+    height: 250px;
+    border: 1px solid rgba(64, 64, 64, 0.3);
+}

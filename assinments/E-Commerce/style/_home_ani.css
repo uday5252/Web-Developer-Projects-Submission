@@ -1,0 +1,120 @@
+#home-animation-container {
+    width: 100%;
+    height: 450px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    margin: 18px;
+    position: relative;
+}
+#ani-card-list {
+    /* width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none; */
+    width: 98%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+#ani-card-list .ani-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    /* padding: 0px 10px;  */
+    margin-right: 15px;
+    min-width: 100%;
+    height: 100%;
+    /* transform: translateX(-101%); */
+    /* -101, 202, 303, 404, ----*/
+    background-color: white;
+    animation: slide 20s ease infinite;
+    background-size: cover;
+    background-position: center;
+
+}
+#left, #right {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#left {
+    top: 50%;
+    left: 50px;
+}
+#right{
+    top: 50%;
+    right: 50px;
+}
+#ani-card-num {
+    max-width: 40%;
+    height: 15px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #B5B4AC;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 6px;
+    /* position: relative; */
+}
+#ani-card-num .card-num {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0px 2px;
+    border-radius: 25px;
+}
+
+@keyframes slide {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    25%, 45% {
+        transform: translateX(-101%);
+    }
+    50%, 70% {
+        transform: translateX(-202%);
+    }
+    75%, 90% {
+        transform: translateX(-303%);
+    }
+    100% {
+        transform: translateX(-404%);
+    }
+}
+#event-card {
+    background-image: url(../images/iphone.jpg);
+}
+#ani-card-num::before {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: change 20s ease infinite;/* -28 -14 0 14 28*/
+}
+@keyframes change {
+    0%, 20% {
+        transform: translateX(-28px);
+    }
+    25%, 45% {
+        transform: translateX(-14px);
+    }
+    50%, 70% {
+        transform: translateX(0px);
+    }
+    75%, 95% {
+        transform: translateX(14px);
+    }
+    100% {
+        transform: translateX(28px);
+    }
+}
