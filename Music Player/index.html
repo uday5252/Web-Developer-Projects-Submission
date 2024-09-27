@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="container">
+            <img class="displayImage" src="images/music-1.jpg" alt="">
+            <audio src="audio/music-1.mp3" id="musicFile1"></audio>
+
+            <h2 id="displaySongName">There's No Way</h2>
+            <h3 id="displaySingerName">(feat. julia Michaels)</h3>
+
+            <div class="progressContainer">
+                <div class="progressBar"></div>
+            </div>
+
+            <div class="audioTime">
+                <div class="currentaudioTime">0.00</div>
+                <div class="audioDuration">0.00</div>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-backward" id="backward"></i>
+                <i class="fa-solid fa-play" id="play"></i>
+                <i class="fa-solid fa-forward" id="forward"></i>
+            </div>
+        </div>
+
+        <div class="musicAnimation">
+            <div class="musicAnimationParent">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+
+            </div>
+            <!-- <h3 id="info">Now you are playing: </h3> -->
+            <h2 id="displaySongData">There's No Way</h2>
+            <h3 id="displaySingerData">(feat. julia Michaels)</h3>
+
+           
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

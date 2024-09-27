@@ -1,0 +1,45 @@
+#best-selling {
+    width: 98%;
+    background-color: white;
+    margin: 18px;
+    /* margin-top: 0; */
+    padding: 26px;
+    position: relative;
+}
+#best-selling-card-container {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#best-selling-card-container .best-selling-card {
+    min-width: 220px;
+    height: 250px;
+    border: 1px solid rgba(64, 64, 64, 0.3);
+}
+#best-selling-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#best-selling-cta {
+    margin: 0px 10px;
+}
+#best-selling-left, #best-selling-right{
+    position: absolute;
+    top: 50%;
+    border-radius: 0;
+    padding: 35px 10px;
+}
+#best-selling-left {
+    left: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#best-selling-right{
+    right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

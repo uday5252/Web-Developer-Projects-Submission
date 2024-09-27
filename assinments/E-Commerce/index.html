@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>One Piece Store</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/import.css">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <h1>
+                <a id="brand" href="">One Piece Store</a>
+            </h1>
+            <div id="search">
+                <input id="input-box" type="text" placeholder="Search Your Product">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="nav-cta">
+                <div class="cta nav-cta-icons" id="sign-in">
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    &nbsp;Sign In
+                </div>
+                <!-- <div class="cta nav-cta-icons" id="wishlist-icon">
+                    <i class="fa-solid fa-heart nav-icon"></i>
+                    &nbsp;Wishlist
+                    <ul id="wishlist-container">
+                        Your Wishlist is Empty!
+                    </ul>
+                </div> -->
+                <div class="cta nav-cta-icons" id="cart-icon">
+                    <span id="cart-count">0</span>
+                    <i class="fa-solid fa-cart-shopping nav-icon"></i>
+                    &nbsp;Cart
+                    <ul id="cart-container">
+                        <!-- Your Cart is Empty! -->
+                        <!-- <li class="product-list">
+                            <div class="product-list-tittle">fs</div>
+                            <div class="product-list-price">sfv</div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="category-container">
+            <h3 id="category-tittle">Shop By Category:</h3>
+            <ul id="category-list">
+                <li class="cta"><a class="category" data="">All Products</a></li>
+                <li class="cta"><a class="category" data="electronics">Electronics</a></li>
+                <li class="cta"><a class="category" data="jewelery">Jewelery</a></li>
+                <li class="cta"><a class="category" data="men's clothing">Men's Clothing</a></li>
+                <li class="cta"><a class="category" data="women's clothing">Women's Clothing</a></li>
+
+                <!-- <li class="cta"><a href="">Electronics</a></li>
+                <li class="cta"><a href="">Footware</a></li> -->
+            </ul>
+        </div>
+        <div id="body-container">
+            <div id="toggle-container">
+                <div id="home-animation-container">
+                    <!-- <div id="ani-cta">
+                        <i id="left" class="fa-solid fa-chevron-left arrow-cta"></i>
+                        <i id="right" class="fa-solid fa-chevron-right arrow-cta"></i>
+                    </div> -->
+                    <div id="ani-card-num">
+                        <span class="card-num"></span>
+                        <span class="card-num"></span>
+                        <span class="card-num"></span>
+                        <span class="card-num"></span>
+                        <span class="card-num"></span>
+                    </div>
+                    <div id="ani-card-list">
+                        <div class="ani-card" id="event-card">
+                            <div id="event">
+                                <h1 id="event-tittle">
+                                    Apple Event
+                                </h1>
+                                <div id="event-timmer">
+                                    Watch Live in 
+                                    <span class="days"></span> days 
+                                    <span class="hours"></span> hours 
+                                    <span class="min"></span> min 
+                                    <span class="sec"></span> sec
+                                </div>
+                                <div id="event-discription">
+                                    View online at apple.com or on Apple TV app.
+                                </div>
+                                <div id="event-cta">
+                                    <a class="event-link" href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a class="event-link" href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a class="event-link" href=""><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="event-link" href=""><i class="fa-solid fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ani-card" style="background-image: url(./images/christamas.jpg);"></div>
+                        <div class="ani-card" style="background-image: url(./images/big-sale.jpg);"></div>
+                        <div class="ani-card" style="background-image: url(./images/product.jpg);"></div>
+                        <div class="ani-card" style="background-image: url(./images/divali-sale.jpg);"></div>
+                    </div>
+                </div>
+                <div id="top-deals">
+                    <div id="top-deals-header">
+                        <h2 id="top-deals-tittle">
+                            Top Deals
+                        </h2>
+                        <i id="top-deals-cta" class="fa-solid fa-chevron-right arrow-cta"></i>
+                    </div>
+                    <!-- <div id="top-deals-arrow-cta">
+                        <i id="top-deals-left" class="fa-solid fa-chevron-left arrow-cta"></i>
+                        <i id="top-deals-right" class="fa-solid fa-chevron-right arrow-cta"></i>
+                    </div> -->
+                    <div id="top-deals-card-container">
+                        <!-- <div class="thumbnail-card">
+                            <div class="thumbnail"></div>
+                            <div class="thumbnail-tittle">dds</div>
+                            <div class="thumbnail-cta">
+                                <div class="thumbnail-price">dscsd</div>
+                                <button class="btn">Add to Cart</button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="upcoming">
+                    <div id="event">
+                        <h1 id="event-tittle">
+                            Apple Event
+                        </h1>
+                        <div id="event-timmer">
+                            Watch Live in 
+                            <span class="days"></span> days 
+                            <span class="hours"></span> hours 
+                            <span class="min"></span> min 
+                            <span class="sec"></span> sec
+                        </div>
+                        <div id="event-discription">
+                            View online at apple.com or on Apple TV app.
+                        </div>
+                        <div id="event-cta">
+                            <a class="event-link" href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="event-link" href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a class="event-link" href=""><i class="fa-solid fa-envelope"></i></a>
+                            <a class="event-link" href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="best-selling">
+                    <div id="best-selling-header">
+                        <h2 id="best-selling-tittle">
+                            Best Selling
+                        </h2>
+                        <i id="best-selling-cta" class="fa-solid fa-chevron-right arrow-cta"></i>
+                    </div>
+                    <!-- <div id="best-selling-arrow-cta">
+                        <i id="best-selling-left" class="fa-solid fa-chevron-left arrow-cta"></i>
+                        <i id="best-selling-right" class="fa-solid fa-chevron-right arrow-cta"></i>
+                    </div> -->
+                    <div id="best-selling-card-container">
+                        <!-- <div class="best-selling-card"></div> -->
+                    </div>
+                </div>
+                <div id="best-mobiles">
+                    <div id="best-mobiles-header">
+                        <h2 id="best-mobiles-tittle">
+                            Best Electronics
+                        </h2>
+                        <i id="best-mobiles-cta" class="fa-solid fa-chevron-right arrow-cta"></i>
+                    </div>
+                    <!-- <div id="best-mobiles-arrow-cta">
+                        <i id="best-mobiles-left" class="fa-solid fa-chevron-left arrow-cta"></i>
+                        <i id="best-mobiles-right" class="fa-solid fa-chevron-right arrow-cta"></i>
+                    </div> -->
+                    <div id="best-mobiles-card-container">
+                    </div>
+                </div>
+            </div>
+            <div id="products-container">
+                <!-- <div class="product-template">
+                    <i class="fa-solid fa-heart wishlist"></i>
+                    <img src="./images/big-sale.jpg" class="product-image" alt="product"></img>
+                    <div class="product-tittle">
+                        Lorem ipsum dolor sit amet consecteturlorem5
+                    </div>
+                    <div class="product-ratting">
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                    </div>
+                    <div class="product-cta">
+                        <div class="product-price">dfb</div>
+                        <button class="btn product-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-links-container">
+                <ul class="footer-list" id="about-us">
+                    <li class="footer-tittle">About Us</li>
+                    <li><a class="footer-link" href="">Contact Us</a></li>
+                    <li><a class="footer-link" href="">About US</a></li>
+                    <li><a class="footer-link" href="">Careers</a></li>
+                    <li><a class="footer-link" href="">Stores Near</a></li>
+                    <li><a class="footer-link" href="">Services</a></li>
+                    <li><a class="footer-link" href="">Wholesale</a></li>
+                </ul>
+                <ul class="footer-list" id="connect-with-us">
+                    <li class="footer-tittle">Contact Us</li>
+                    <li><a class="footer-link" href=""><i class="fa-brands fa-facebook"></i> FaceBook</a></li>
+                    <li><a class="footer-link" href=""><i class="fa-solid fa-camera"></i></i> Instagram</a></li>
+                    <li><a class="footer-link" href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                </ul>
+                <ul class="footer-list" id="customer-policy">
+                    <li class="footer-tittle">Customer Py</a></li>
+                    <li><a class="footer-link" href="">Lorem</a></li>
+                    <li><a class="footer-link" href="">Lorem</a></li>
+                    <li><a class="footer-link" href="">Lorem</a></li>
+                    <li><a class="footer-link" href="">Lorem</a></li>
+                    <li><a class="footer-link" href="">Lorem</a></li>
+                </ul>
+                <ul class="footer-list" id="help">
+                    <li class="footer-tittle">Help</li>
+                    <li><a class="footer-link" href="">Payment</a></li>
+                    <li><a class="footer-link" href="">Shipping</a></li>
+                    <li><a class="footer-link" href="">FAQ</a></li>
+                </ul>    
+            </div>
+            <div id="footer-bottom">
+                <ul class="footer-list"  id="footer-bottom-list">
+                    <li><a class="footer-link" href="">Advertise</a></li>
+                    <li><a class="footer-link" href="">Privacy Note</a></li>
+                    <li><a class="footer-link" href="">Help Center</a></li>
+                    <li><a class="footer-link" href="">Lorem</a></li>
+                    <li><a class="footer-link" href="">© OnePieceStore.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./java script/controller.js"></script>
+</body>
+</html>

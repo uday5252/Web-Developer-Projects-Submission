@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-color: #7b254a;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.parent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 19%;
+    height: 65%;
+    background-color: #ffe9e3;
+    border-radius: 10px;
+    margin-left: 200px;
+    /* box-shadow: 2px 2px 10px white; */
+
+    /* display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px; */
+
+}
+.displayImage{
+    width: 80%;
+    height: 49%;
+    margin: 25px 30px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    /* border-radius: 0%; */
+
+    transition: border-radius 0.2s ease-out;
+}
+h2, h3{
+    margin-bottom: 7px;
+    text-align: center;
+}
+.icons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons > i:nth-child(2){
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px 12px;
+}
+
+.progressContainer{
+    width: 83%;
+    height: 4px;
+    background-color: #909090;
+    border-radius: 10px;
+    margin: 15px 25px 5px;
+}
+.progressBar{
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    border-radius: 20px;
+
+}
+.audioTime{
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+}
+.currentaudioTime, .audioDuration{
+    font-weight: 600;
+}
+
+i{
+    font-size: 23px;
+}
+
+.musicAnimation{
+    width: 40%;
+    height: 150px;
+    /* border: 1px solid black; */
+    display: grid;
+
+    justify-content: center;
+    align-content: center;
+}
+#displaySongData, #displaySingerData{
+    text-align: center;
+    color: #ffe9e3;
+    /* margin-top: 10px; */
+}
+.musicAnimationParent{
+    /* height: 200px; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.musicAnimationParent > div{
+    width: 12px;
+    height: 8px;
+    margin: 7px 2px;
+    border: 1px solid #ffe9e3;
+    /* border: 1px solid black; */
+    background-color: #ffe9e3;
+
+}
+#one{
+    animation-delay: 0s;
+}
+#two{
+    animation-delay: 0.2s;
+}
+#three{
+    animation-delay: 0.4s;
+}
+#four{
+    animation-delay: 0.6s;
+}
+#five{
+    animation-delay: 0.8s;
+}
+#six{
+    animation-delay: 0.9s;
+}
+#seven{
+    animation-delay: 1s;
+}
+
+
+@keyframes rotateImage {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+@keyframes musicAnimation {
+    0%{
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    25%{
+        transform: scaleY(2);
+        transform-origin: bottom;
+    }
+    
+    50%{
+        transform: scaleY(3.5);
+        transform-origin: bottom;
+    }
+    75%{
+        transform: scaleY(5.75);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: scaleY(7);
+        transform-origin: bottom;
+    }
+    
+}
+
+.imageRotateAnimation{
+    width: 80%;
+    height: 49%;
+    margin: 25px 30px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 50%;
+    transition-property: border-radius;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+    animation: rotateImage 3s infinite linear ;
+
+}
+.addMusicAnimationParent > div{
+    width: 12px;
+    height: 8px;
+    margin: 7px 2px;
+    border: 1px solid #ffe9e3;
+    /* border: 1px solid black; */
+    background-color: #ffe9e3;
+
+
+    animation: musicAnimation 0.3s infinite;
+}
+.addMusicAnimationParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

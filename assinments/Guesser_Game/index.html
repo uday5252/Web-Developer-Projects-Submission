@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+        <h1 id="tittle">Welcome to Gusser Game</h1>
+        <button class="btn" id="rules-btn">Rules</button>
+    </div>
+    <div class="parent">
+        <div class="container">
+            <div class="start">
+                <p>Please Select the Range!</p>
+                <label>Enter Minimum Value (optional):</label>
+                <input id="min-number" type="number" min="1"><br>
+                <label>Enter Maximum Value (required):</label>
+                <input id="max-number" type="number" min="1" required><br>
+                <button class="btn" id="start">Start</button>
+            </div>
+            <div class="user-guess">
+                <label>Guess Number in <span id="current-chance">-</span> of <span id="total-chance">-</span> chances :</label>
+                <input id="guess" type="number" min="1" disabled>
+                <div class="user-cta-btn">
+                    <button class="btn" id="submit" disabled>Submit</button>
+                    <button class="btn" id="get-help" disabled>Get Help!</button>
+                </div>
+                <div id="result">
+                    <!-- <p>hello</p>
+                    <div class="number-card">2</div>
+                    <div class="number-card">5</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rules">
+        <div class="rules-header">
+            <h1>Rules for Guessing Game</h1>
+            <i id="rules-exit" class="fa-solid fa-xmark"></i>
+        </div> 
+        <ul>
+            <li>First of all, Participant have to select Minimum and Maximum values to generate random number between Minimum and Maximum values (Default Minimum values is Zero).</li>
+            <li>Also diffrence between Minimum and Maximum number should greater than 5.</li>
+            <li>After you need to Guess the random number, which is generated in range of between Minimum and Maximum values.</li>
+            <li>Participant will have only 5 chances to Guess the Number.</li>
+            <li>If Participant selected "Get Help!", then he/she will have only one chance among 2 options in order to find correct number(if only chances are greater than 3).</li>
+        </ul>
+    </div>
+    <div class="result-pop-up ">
+        <h1 id="result-declare"></h1>
+        <div id="result-cta-btn">
+            <label>Do you want to Repaly Game?</label>
+            <a class="btn" href="http://127.0.0.1:5500/Guesser_Game/index.html">Replay</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

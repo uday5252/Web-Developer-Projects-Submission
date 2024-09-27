@@ -1,0 +1,15 @@
+Progress Steps
+
+Created usiing HTML, CSS and JS and also BOOTSTRAP
+
+In HTML 4 div tags present with step numbers as 1, 2, 3, 4 and 2 buttons those are next button(primary) and previous button(disabled).
+
+next buttton function ==>
+Initially previous button is in "disbled" mode, When we click on next button the previous button should become in active mode and next step number 
+should become primary in color, when we reach the last step the next button must become "disabled" an also the bridge between the current step and 
+the next step number should become primary in color.
+
+previous button function ==>
+As wll as, when we click on the previous button, if step number at last position the next button shouldbecome active and the current step number 
+will become secondary in color also the bridge between the cureent step and previous step become secondary in color, when it reaches to starting 
+position of step number previous button become disbled while the next button shoud be in active mode,
